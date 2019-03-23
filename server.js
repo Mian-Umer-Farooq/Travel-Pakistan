@@ -1,17 +1,23 @@
-const express = require('express');
+var express = require('express');
+//var bodyParser = require("body-parser");
 
-const app = express();
+// var users = [
+//     { id: 1, username: "umar", password: 'abcd1234' },
+//     { id: 2, username: "test", password: '1234' },
+// ]
 
-app.get('/api/customers', (req, res) => {
-  const customers = [
-    {id: 1, firstName: 'John', lastName: 'Doe'},
-    {id: 2, firstName: 'Brad', lastName: 'Traversy'},
-    {id: 3, firstName: 'Mary', lastName: 'Swanson'},
-  ];
+var server = express()
 
-  res.json(customers);
-});
+// server.use(express.static('./build'))
+// server.use(bodyParser.urlencoded({ extended: true }))
+// server.use(bodyParser.json())
 
-const port = 5000;
+require('./db-config');
+require('./all-routes')(server);
 
-app.listen(port, () => `Server running on port ${port}`);
+server.use((err, req, res, next) => {
+    console.warn(err)
+    res.status(500).send("Error Catched by error handler.")
+})
+
+server.listen(process.env.PORT || 8000, () => console.log("server is running"))

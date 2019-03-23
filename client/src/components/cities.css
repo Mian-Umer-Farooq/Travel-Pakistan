@@ -1,0 +1,113 @@
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+  }
+
+  .container > h1{
+    font-size: 36px;
+  }
+  .container > h3{
+    font-size: 30px;
+    margin-top: -80px;
+  }
+
+  
+  .bottom-left {
+    position: absolute;
+    bottom: 1360px;
+    left: 135px;
+    font-size: 34px;
+    line-height: 1;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  #image{
+      height: 300px;
+      width: 500px;
+      margin-top: 80px;
+      margin-right: 55px;
+      margin-bottom: 50px;
+      background-color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  #image:hover{
+    transform: scale(1.02);
+  }
+
+  .bottom-left1 {
+    position: absolute;
+    bottom: 1360px;
+    left: 690px;
+    font-size: 34px;
+    line-height: 1;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .bottom-left2 {
+    position: absolute;
+    bottom: 930px;
+    left: 690px;
+    font-size: 34px;
+    line-height: 1;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .bottom-left3 {
+    position: absolute;
+    bottom: 940px;
+    left: 140px;
+    font-size: 34px;
+    line-height: 1;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .bottom-left4 {
+    position: absolute;
+    bottom: 500px;
+    left: 690px;
+    font-size: 34px;
+    line-height: 1;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .bottom-left5 {
+    position: absolute;
+    bottom: 500px;
+    left: 140px;
+    font-size: 34px;
+    line-height: 1;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .bottom-left6 {
+    position: absolute;
+    bottom: 70px;
+    left: 690px;
+    font-size: 34px;
+    line-height: 1;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .bottom-left7 {
+    position: absolute;
+    bottom: 70px;
+    left: 140px;
+    font-size: 34px;
+    line-height: 1;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  
+
