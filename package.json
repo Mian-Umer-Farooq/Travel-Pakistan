@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Starter kit for creating React and Express apps",
   "main": "server.js",
+  "engines": {
+    "node": "10.13.0"
+  },
   "scripts": {
     "client-install": "cd client && npm install",
     "start": "node server.js",
